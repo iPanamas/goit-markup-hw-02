@@ -36,10 +36,18 @@ address {
 }
 
 :root{
+    /* color */
     --primary-text-color: #212121;
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --text-color: #757575;
+    --hover-color: #FFFFFF;
+
+    /* fontWeight */
+    --accent-fontWeight: 700;
+
+    /* textSize */
+    --section-titleSize: 36px;
 }
 
 
@@ -52,7 +60,7 @@ address {
 }
 .header-logo {
     font-family: Raleway;
-    font-weight: 700;
+    font-weight: var(--accent-fontWeight);
     font-size: 26px;
     line-height: 1.2;
 
@@ -75,6 +83,8 @@ address {
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:focus,
 .nav-link:hover{
@@ -83,11 +93,12 @@ address {
 .header-contact {
     
 }
-.contact-link {
+.headerContact-link {
     color: var(--text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-link:focus,
-.contact-link:hover{
+.headerContact-link:focus,
+.headerContact-link:hover{
     color: var(--accent-color);
 }
 
@@ -115,7 +126,7 @@ address {
     padding: 10px 32px;
     margin-top: 30px;
 
-    font-weight: 700;
+    font-weight: var(--accent-fontWeight);
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
@@ -127,6 +138,12 @@ address {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.content-btn:focus,
+.content-btn:hover{
+    background-color: #0a70c1;
 }
 
 /* skills ======================================= */
@@ -141,7 +158,7 @@ address {
 .skills-title {
     margin-bottom: 10px;
 
-    font-weight: 700;
+    font-weight: var(--accent-fontWeight);
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.03em;
@@ -157,7 +174,6 @@ address {
 }
 
 /* whatWeDo ======================================= */
-
 .whatWeDo {
     margin-bottom: 94px;
     text-align: center;
@@ -166,8 +182,8 @@ address {
 .whatWeDo-title {
     margin-bottom: 50px;
     
-    font-weight: 700;
-    font-size: 36px;
+    font-weight: var(--accent-fontWeight);
+    font-size: var(--section-titleSize);
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
@@ -186,8 +202,8 @@ address {
 .team-title {
     margin-bottom: 50px;
 
-    font-weight: 700;
-    font-size: 36px;
+    font-weight: var(--accent-fontWeight);
+    font-size: var(--section-titleSize);
     line-height: 1.2;
     letter-spacing: 0.03em;
 
@@ -229,7 +245,6 @@ address {
 }
 
 /* footer ======================================= */
-
 .footer {
     padding: 60px 0;
     background-color: #2F303A;
@@ -238,7 +253,7 @@ address {
 }
 .footer-logo {
     font-family: Raleway;
-    font-weight: 700;
+    font-weight: var(--accent-fontWeight);
     font-size: 26px;
     line-height: 1.2;
 
@@ -252,6 +267,16 @@ address {
 .footer-contacts {
     margin-top: 20px;
 }
+
+.footerContact-link {
+    color: var(--text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footerContact-link:focus,
+.footerContact-link:hover{
+    color: var(--hover-color);
+}
+
 .footer-address {
 }
 .address-link{
@@ -268,7 +293,6 @@ address {
 }
 
 /* portfolio ======================================= */
-
 .portfolio {
     padding: 94px 0;
 }
@@ -280,7 +304,7 @@ address {
     margin-bottom: 5px;
     padding: 6px 22px;
 
-    font-weight: 700;
+    font-weight: var(--accent-fontWeight);
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
@@ -315,7 +339,7 @@ address {
 .portfolio-title {
     padding: 20px 0 4px 24px;
 
-    font-weight: 700;
+    font-weight: var(--accent-fontWeight);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
