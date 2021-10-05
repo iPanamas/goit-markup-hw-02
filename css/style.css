@@ -75,6 +75,10 @@ address {
 }
 .nav {
 }
+.nav .nav-link.current{
+    color: var(--accent-color);
+}
+
 .nav-list {
 }
 .nav-link {
