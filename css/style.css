@@ -1,3 +1,19 @@
+:root{
+    /* color */
+    --primary-text-color: #212121;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --text-color: #757575;
+    --hover-color: #FFFFFF;
+
+    /* fontWeight */
+    --accent-fontWeight: 700;
+
+    /* textSize */
+    --section-titleSize: 36px;
+}
+
+
 body {
     background-color: #ffffff;
     color: #212121;
@@ -15,18 +31,19 @@ h4,
 h5,
 h6,
 p,
-ul,
+ul {
+    margin: 0;
+    padding: 0;  
+}
+
 li,
 a,
 button,
 address {
-    margin: 0;
-    padding: 0;
     list-style: none;
     font-style: normal;
     text-decoration: none;
 }
-
 
 .container {
     width: 100%;
@@ -35,22 +52,6 @@ address {
     padding-right: 15px;
     margin: 0 auto;
 }
-
-:root{
-    /* color */
-    --primary-text-color: #212121;
-    --title-text-color: #212121;
-    --accent-color: #2196F3;
-    --text-color: #757575;
-    --hover-color: #FFFFFF;
-
-    /* fontWeight */
-    --accent-fontWeight: 700;
-
-    /* textSize */
-    --section-titleSize: 36px;
-}
-
 
 /* header ======================================= */
 .header {
@@ -64,7 +65,6 @@ address {
     font-weight: var(--accent-fontWeight);
     font-size: 26px;
     line-height: 1.2;
-
     letter-spacing: 0.03em;
 
     color: #2196F3;
@@ -99,6 +99,7 @@ address {
     
 }
 .headerContact-link {
+    font-weight: 500;
     color: var(--text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -109,7 +110,6 @@ address {
 
 /* content ======================================= */
 .content {
-    padding: 200px 0;
     background-color: #2F303A;
     text-align: center;
 }
@@ -153,10 +153,9 @@ address {
 
 /* skills ======================================= */
 .skills {
-    margin: 94px 0;
 }
 .skills-items {
-    width: 270px;
+    
 }
 .skills-item {
 }
@@ -180,7 +179,6 @@ address {
 
 /* whatWeDo ======================================= */
 .whatWeDo {
-    margin-bottom: 94px;
     text-align: center;
 }
 
@@ -200,7 +198,6 @@ address {
 
 /* team ======================================= */
 .team {
-    padding: 94px 0;
     background-color: #F5F4FA;
     text-align: center;
 }
@@ -274,6 +271,7 @@ address {
 }
 
 .footerContact-link {
+    font-weight: 500;
     color: var(--text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -299,13 +297,12 @@ address {
 
 /* portfolio ======================================= */
 .portfolio {
-    padding: 94px 0;
 }
 
-.portfolio-filter {
+.filter {
     margin-bottom: 50px;
 }
-.portfolio-button {
+.filter-button {
     margin-bottom: 5px;
     padding: 6px 22px;
 
@@ -324,8 +321,8 @@ address {
     border-radius: 4px;
 }
 
-.portfolio-button:focus,
-.portfolio-button:hover{
+.filter-button:focus,
+.filter-button:hover{
     color: #ffffff;
     background-color: #2196F3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
@@ -333,7 +330,7 @@ address {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-items {
+.portfolio {
 }
 .portfolio-item {
     margin-bottom: 5px;
