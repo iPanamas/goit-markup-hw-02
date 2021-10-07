@@ -1,28 +1,31 @@
 :root{
-    /* color */
+    /* text-color */
     --primary-text-color: #212121;
-    --title-text-color: #212121;
+    --second-text-color: #757575;
+    --third-text-color: #FFFFFF;
     --accent-color: #2196F3;
-    --text-color: #757575;
-    --hover-color: #FFFFFF;
 
-    /* fontWeight */
-    --accent-fontWeight: 700;
+    /* logo-color */
+    --logo-primary-color: #2196F3;
+    --logo-header-color: #000000;
+    --logo-footer-color: #FFFFFF;
 
-    /* textSize */
-    --section-titleSize: 36px;
+    /* font-weight */
+    --primary-fontWeight: 700;
+    --second-fontWeight: 500;
+
+    /* text-size */
+    --title-text-size: 36px;
 }
-
 
 body {
     background-color: #ffffff;
-    color: #212121;
+    color: var(--primary-text-color);
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
-
 
 h1,
 h2,
@@ -62,17 +65,17 @@ address {
 }
 .header-logo {
     font-family: Raleway;
-    font-weight: var(--accent-fontWeight);
+    font-weight: var(--primary-fontWeight);
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
 
-    color: #2196F3;
+    color: var(--logo-primary-color);
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .header-logo span{
-    color: var(--primary-text-color)
+    color: var(--logo-header-color)
 }
 .nav {
 }
@@ -84,7 +87,7 @@ address {
 }
 .nav-link {
     color: var(--primary-text-color);
-    font-weight: 500;
+    font-weight: var(--second-fontWeight);
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
@@ -99,8 +102,8 @@ address {
     
 }
 .headerContact-link {
-    font-weight: 500;
-    color: var(--text-color);
+    font-weight: var(--second-fontWeight);
+    color: var(--second-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .headerContact-link:focus,
@@ -121,7 +124,7 @@ address {
     font-size: 44px;
     line-height: 1.36;
 
-    color: #FFFFFF;
+    color: var(--third-text-color);
 
     text-align: center;
     letter-spacing: 0.06em;
@@ -131,12 +134,12 @@ address {
     padding: 10px 32px;
     margin-top: 30px;
 
-    font-weight: var(--accent-fontWeight);
+    font-weight: var(--primary-fontWeight);
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
 
-    color: #FFFFFF;
+    color: var(--third-text-color);
     background-color: #2196F3;
     border: none;
 
@@ -148,7 +151,7 @@ address {
 
 .content-btn:focus,
 .content-btn:hover{
-    background-color: #0a70c1;
+    background-color: #188CE8;
 }
 
 /* skills ======================================= */
@@ -162,19 +165,19 @@ address {
 .skills-title {
     margin-bottom: 10px;
 
-    font-weight: var(--accent-fontWeight);
+    font-weight: var(--primary-fontWeight);
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--title-text-color);
+    color: var(--primary-text-color);
 }
 .skills-text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 
-    color: var(--text-color);    
+    color: var(--second-text-color);    
 }
 
 /* whatWeDo ======================================= */
@@ -185,13 +188,13 @@ address {
 .whatWeDo-title {
     margin-bottom: 50px;
     
-    font-weight: var(--accent-fontWeight);
-    font-size: var(--section-titleSize);
+    font-weight: var(--primary-fontWeight);
+    font-size: var(--title-text-size);
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: var(--title-text-color);
+    color: var(--primary-text-color);
 }
 .whatWeDo-images {
 }
@@ -204,12 +207,12 @@ address {
 .team-title {
     margin-bottom: 50px;
 
-    font-weight: var(--accent-fontWeight);
-    font-size: var(--section-titleSize);
+    font-weight: var(--primary-fontWeight);
+    font-size: var(--title-text-size);
     line-height: 1.2;
     letter-spacing: 0.03em;
 
-    color: var(--title-text-color);
+    color: var(--primary-text-color);
 }
 .team-cards {
 
@@ -230,7 +233,7 @@ address {
     margin-bottom: 10px;
     padding-top: 30px;
 
-    font-weight: 500;
+    font-weight: var(--second-fontWeight);
     font-size: 16px;
     line-height: 1.2;
 
@@ -243,7 +246,7 @@ address {
 
     letter-spacing: 0.03em;
 
-    color: var(--text-color);
+    color: var(--second-text-color);
 }
 
 /* footer ======================================= */
@@ -255,29 +258,29 @@ address {
 }
 .footer-logo {
     font-family: Raleway;
-    font-weight: var(--accent-fontWeight);
+    font-weight: var(--primary-fontWeight);
     font-size: 26px;
     line-height: 1.2;
 
     letter-spacing: 0.03em;
 
-    color: #2196F3;
+    color: var(--logo-primary-color);
 }
 .footer-logo span{
-    color: #FFFFFF;
+    color: var(--logo-footer-color);
 }
 .footer-contacts {
     margin-top: 20px;
 }
 
 .footerContact-link {
-    font-weight: 500;
-    color: var(--text-color);
+    font-weight: var(--second-fontWeight);
+    color: var(--second-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footerContact-link:focus,
 .footerContact-link:hover{
-    color: var(--hover-color);
+    color: var(--third-text-color);
 }
 
 .footer-address {
@@ -306,13 +309,13 @@ address {
     margin-bottom: 5px;
     padding: 6px 22px;
 
-    font-weight: var(--accent-fontWeight);
+    font-weight: var(--primary-fontWeight);
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
 
-    color: var(--button-text-color);
+    color: var(--primary-text-color);
     background-color: #F5F4FA;
 
     cursor: pointer;
@@ -323,8 +326,8 @@ address {
 
 .filter-button:focus,
 .filter-button:hover{
-    color: #ffffff;
-    background-color: #2196F3;
+    color: var(--third-text-color);
+    background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -341,12 +344,12 @@ address {
 .portfolio-title {
     padding: 20px 0 4px 24px;
 
-    font-weight: var(--accent-fontWeight);
+    font-weight: var(--primary-fontWeight);
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 
-    color: var(--title-text-color);
+    color: var(--primary-text-color);
 }
 .portfolio-text {
     padding: 0 0 20px 24px;
@@ -355,7 +358,7 @@ address {
     line-height: 1.87;
     letter-spacing: 0.03em;
 
-    color: var(--text-color);
+    color: var(--second-text-color);
 }
 
 
